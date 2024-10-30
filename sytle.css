@@ -1,0 +1,338 @@
+/* ===========================
+   Start of GLOBAL STYLES
+   =========================== */
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: calibri;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    /* Remove underline from all links */
+}
+
+.flex-row-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+}
+
+.flex-column-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+/* text indentation */
+#about-section p,
+#skills-info,
+#hobbies p
+{
+    text-indent: 5rem;
+}
+
+#skills-info,
+#hobbies p,
+#poems-section p,
+.box p
+{
+    text-align: justify !important;
+}
+
+
+/*============================
+  Start of the home section styles
+=============================*/
+
+.home-section {
+    color: white;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("/images/home-background.jpg");
+    background-size: cover;
+    padding-top: 100px; /* Add top padding to offset the height of the navbar */
+}
+
+.navbar {
+    padding: 10px 40px;
+    background-color: #4a4a4a;; /* Softer dark gray */
+    position: fixed; /* Keeps the navbar fixed */
+    top: 0; /* Position at the top */
+    width: 100%; /* Ensure it stretches across the screen */
+    z-index: 1000; /* Make sure it appears on top */
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    padding: 0rem 1.3rem;
+    cursor: default;
+}
+
+.nav-link {
+    padding: 0px !important;
+}
+
+.nav-link:hover {
+    color: #2de91b !important;
+    cursor: pointer;
+}
+
+#home-profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+/* ===========================
+   TYPED.JS ANIMATION STYLES
+   =========================== */
+
+.typed-cursor {
+    font-size: 1em;
+    /* Ensure the cursor size matches the text */
+    font-weight: normal;
+    /* Make sure it's consistent with your text weight */
+    display: inline;
+    /* Keep it inline so it moves along with the text */
+    vertical-align: baseline;
+    /* Aligns the cursor with the baseline of the text */
+}
+
+.typed-container {
+    height: 2em;
+    /* Adjust this height based on your text size */
+}
+
+
+.home-icons a {
+    margin: 20px;
+    font-size: 1.3rem;
+    text-decoration: none !important;
+    color: inherit !important;
+    /* Ensures the anchor inherits the text color */
+}
+
+
+
+/* Small Devices (max-width: 576px) */
+@media only screen and (max-width: 576px) {
+
+    .navbar {
+        padding: 5px 5px;
+    }
+}
+
+/* Medium Devices (min-width: 576px and max-width: 768px) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {}
+
+
+/*============================
+  end of the home section styles
+=============================*/
+
+
+.card {
+    width: 11rem !important;
+}
+
+/* Ensures all text inside poems-row has specified font styles */
+#poems-row {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-family: "Tiro Kannada", serif;
+    font-weight: 500;
+}
+
+/* Styles specifically for <p> tags inside .card */
+#poems-row .card p {
+    padding-top: 2px !important;
+    margin-bottom: 0.2rem !important;
+    color: #333; /* Example color */
+    text-align: center !important; /* Center-aligns text */
+}
+
+.poem-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.bi-stopwatch {
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+.bi-calendar-event {
+    margin-right: 3px;
+}
+
+.category-badge {
+    background-color: #e7e7e7;
+    padding: 2px 4px;
+    margin: 3px 5px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+
+/* Small Devices (max-width: 576px) */
+@media only screen and (max-width: 576px) {
+    .card {
+        width: 10rem !important;
+    }
+
+    .bi-stopwatch {
+        margin-left: 1px;
+        margin-right: 2px;
+    }
+    
+    .bi-calendar-event {
+        margin-right: 1px;
+    }
+
+}
+
+
+/* Medium Devices (min-width: 576px and max-width: 768px) */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    .card {
+        width: 10rem !important;
+    }
+
+    .k-text {
+        font-size: 0.7rem;
+    }
+}
+
+
+/*============================
+  start of about section
+=============================*/
+
+#about-section{
+    background-color: rgb(216, 216, 216);
+    text-align: justify;
+}
+
+#about-image{
+    width: 85%;
+}
+
+
+/* Small Devices (max-width: 576px) */
+@media only screen and (max-width: 576px) {
+    #about-image{
+        width: 100%;
+    }
+}
+
+/*============================
+  end of about section
+=============================*/
+
+/*============================
+  Start of skills
+=============================*/
+
+#skills-section p,
+#skills-section h4
+{
+    text-align: center;
+}
+
+
+/*============================
+  Start of Education
+=============================*/
+
+#education-section {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+      url("/images/skills-bg.jpg"); */
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    color: white;
+}
+
+.box label {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    padding: 3px 10px;
+    border: 1px solid #35a22c;
+}
+
+
+/*============================
+  Start of Hobbies
+=============================*/
+
+#hobbies h5 {
+    text-align: center;
+} 
+
+
+/*============================
+  Start of Footer
+=============================*/
+
+.footer a {
+    color: white;
+}
+
+
+.footer p {
+    color: white;
+}
+
+
+/* scrollbar */
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 3px; /* Width of the scrollbar */
+    height: 5px; /* Height of the scrollbar (for horizontal bars) */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 20px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+    border: 1px solid transparent; /* Space between thumb and track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover for better UX */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+}
